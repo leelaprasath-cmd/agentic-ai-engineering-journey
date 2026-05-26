@@ -1,5 +1,3 @@
-
-
 student_name = "Leela Prasath"
 college_name = "Jerusalem College of Engineering"
 department = "Computer Science Engineering"
