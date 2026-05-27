@@ -1,20 +1,12 @@
 
 
-print("========== LOOP PRACTICE SYSTEM ==========")
+print("========== LOOPS IN PYTHON ==========")
 
 
 print("\n========== FOR LOOP ==========")
 
 for i in range(1, 6):
-    print("Python Practice Day", i)
-
-
-print("\n========== LOOPING THROUGH LIST ==========")
-
-programming_languages = ["Python", "Java", "C", "JavaScript"]
-
-for language in programming_languages:
-    print("Language:", language)
+    print("Day", i)
 
 
 
@@ -23,35 +15,49 @@ print("\n========== WHILE LOOP ==========")
 count = 1
 
 while count <= 5:
-    print("Count Value:", count)
+    print("Count:", count)
     count += 1
 
-print("\n========== MULTIPLICATION TABLE ==========")
 
-number = int(input("Enter a number: "))
+print("\n========== BREAK STATEMENT ==========")
 
-for i in range(1, 11):
-    print(number, "x", i, "=", number * i)
+for number in range(1, 11):
 
+    if number == 6:
+        print("Loop stopped at", number)
+        break
 
-print("\n========== EVEN NUMBERS ==========")
-
-for i in range(1, 21):
-    if i % 2 == 0:
-        print(i)
+    print(number)
 
 
-print("\n========== SUM OF NUMBERS ==========")
 
-total = 0
+print("\n========== CONTINUE STATEMENT ==========")
 
-for i in range(1, 11):
-    total += i
+for number in range(1, 11):
 
-print("Sum from 1 to 10 is:", total)
+    if number == 5:
+        continue
+
+    print(number)
+
+print("\n========== NESTED LOOPS ==========")
+
+for row in range(1, 4):
+
+    for column in range(1, 4):
+
+        print(row, column)
 
 
-# PROGRAM COMPLETED
-# ==========================================
+
+print("\n========== STAR PATTERN ==========")
+
+for i in range(1, 6):
+
+    for j in range(i):
+
+        print("*", end=" ")
+
+    print()
 
 print("\n========== PROGRAM COMPLETED ==========")
