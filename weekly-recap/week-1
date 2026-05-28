@@ -1,0 +1,352 @@
+# 🚀 Week 01 Recap — Python Foundations
+
+Welcome to my Week 01 learning recap from my **Agentic AI Engineering Journey**.
+This week focused on building a strong foundation in Python programming and understanding the core concepts required for future AI engineering projects.
+
+---
+
+# 🧠 Core Concepts Covered
+
+## 🔹 Variables
+
+Variables are used to store data in memory.
+
+```python
+name = "Leela"
+age = 19
+```
+
+### Learned:
+
+* Creating variables
+* Naming conventions
+* Assigning values
+* Updating variable values
+
+---
+
+# 🔹 Data Types
+
+Python supports different types of data.
+
+| Data Type | Example    |
+| --------- | ---------- |
+| String    | `"Python"` |
+| Integer   | `10`       |
+| Float     | `8.5`      |
+| Boolean   | `True`     |
+| Complex   | `4 + 5j`   |
+
+### Learned:
+
+* Understanding different data types
+* Using `type()` function
+* Difference between numeric and text values
+
+---
+
+# 🔹 User Input
+
+Using `input()` to get values from users dynamically.
+
+```python
+name = input("Enter your name: ")
+```
+
+### Learned:
+
+* Taking user input
+* Converting input types
+* Building interactive programs
+
+---
+
+# 🔹 Operators
+
+Operators perform operations on values and variables.
+
+## ➕ Arithmetic Operators
+
+```python
++
+-
+*
+/
+%
+**
+//
+```
+
+## ⚖️ Comparison Operators
+
+```python
+==
+!=
+>
+<
+>=
+<=
+```
+
+## 🔗 Logical Operators
+
+```python
+and
+or
+not
+```
+
+## 📝 Assignment Operators
+
+```python
++=
+-=
+*=
+```
+
+### Learned:
+
+* Mathematical calculations
+* Comparing values
+* Combining conditions
+* Updating variable values efficiently
+
+---
+
+# 🔹 Collections in Python
+
+## 📋 List
+
+Ordered and changeable collection.
+
+```python
+languages = ["Python", "Java", "C"]
+```
+
+---
+
+## 📦 Tuple
+
+Ordered but immutable collection.
+
+```python
+student = ("Leela", 19, "CSE")
+```
+
+---
+
+## 🎯 Set
+
+Unordered collection with unique values.
+
+```python
+tools = {"ChatGPT", "Claude"}
+```
+
+---
+
+## 🗂️ Dictionary
+
+Stores data in key-value pairs.
+
+```python
+profile = {
+    "name": "Leela",
+    "goal": "AI Engineer"
+}
+```
+
+### Learned:
+
+* Storing grouped data
+* Accessing elements
+* Updating collections
+* Difference between mutable and immutable structures
+
+---
+
+# 🔹 Conditional Statements
+
+Programs can make decisions using conditions.
+
+## ✅ if
+
+```python
+if mark > 90:
+```
+
+## 🔄 if-else
+
+```python
+if age >= 18:
+else:
+```
+
+## 🧠 if-elif-else
+
+```python
+if
+elif
+else
+```
+
+## 🪆 Nested if
+
+Condition inside another condition.
+
+### Learned:
+
+* Decision making
+* Checking multiple conditions
+* Building logical flows
+
+---
+
+# 🔹 Loops
+
+Loops repeat code automatically.
+
+## 🔁 for Loop
+
+```python
+for i in range(5):
+```
+
+## 🔄 while Loop
+
+```python
+while condition:
+```
+
+---
+
+# 🔹 break Statement
+
+Stops loop execution immediately.
+
+```python
+break
+```
+
+---
+
+# 🔹 continue Statement
+
+Skips current iteration.
+
+```python
+continue
+```
+
+---
+
+# 🔹 Nested Loops
+
+Loop inside another loop.
+
+### Learned:
+
+* Repetitive execution
+* Iteration logic
+* Pattern generation
+* Loop control techniques
+
+---
+
+# 🔹 Functions
+
+Functions organize reusable code blocks.
+
+## 🛠️ def Function
+
+```python
+def welcome():
+```
+
+---
+
+## 📥 Parameters
+
+Values passed into functions.
+
+```python
+def add(a, b):
+```
+
+---
+
+## 📤 Return Statement
+
+Returns output from functions.
+
+```python
+return result
+```
+
+---
+
+## ⚙️ Default Arguments
+
+Default parameter values.
+
+```python
+def course(name="Python"):
+```
+
+---
+
+## 🌍 Variable Scope
+
+* Global Scope
+* Local Scope
+
+### Learned:
+
+* Code reusability
+* Cleaner program structure
+* Modular programming
+* Function-based thinking
+
+---
+
+# 📈 Skills Improved This Week
+
+✅ Problem Solving
+✅ Python Syntax Understanding
+✅ Code Structure
+✅ Logical Thinking
+✅ GitHub Consistency
+✅ Debugging Basics
+✅ Confidence in Writing Programs
+
+---
+
+# ⚠️ Common Mistakes I Faced
+
+* Indentation mistakes
+* Missing brackets or colons
+* Confusing strings and integers
+* Variable naming inconsistencies
+* Forgetting type conversion with `input()`
+
+---
+
+# 🎯 Week 01 Outcome
+
+By the end of Week 01, I can now:
+
+* Write beginner-level Python programs
+* Use variables and data types confidently
+* Build interactive programs using `input()`
+* Apply conditions and loops
+* Create reusable functions
+* Understand Python collections
+* Push structured code to GitHub consistently
+
+---
+
+# 🔥 Philosophy
+
+> Read → Practice → Build → Commit
+
+Small consistent progress every day compounds into engineering mastery.
