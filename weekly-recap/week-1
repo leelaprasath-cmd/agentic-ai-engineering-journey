@@ -1,69 +1,115 @@
-# 🚀 Week 01 Recap — Python Foundations
+# 🚀 Week 1 — Python Foundations Recap
 
-Welcome to my Week 01 learning recap from my **Agentic AI Engineering Journey**.
-This week focused on building a strong foundation in Python programming and understanding the core concepts required for future AI engineering projects.
+**Time Spent:** ~6–7 Hours
+**Resources Used:** freeCodeCamp Python Course + Python Official Documentation + Practice Programs
 
 ---
 
-# 🧠 Core Concepts Covered
+# 📌 Core Concepts Covered
 
-## 🔹 Variables
+Focused on building strong Python fundamentals by understanding how Python handles data, user interaction, logical execution, and reusable code structures.
 
-Variables are used to store data in memory.
+The week primarily concentrated on:
+
+* Variables & Data Types
+* User Input Handling
+* Type Conversion
+* Operators
+* Python Collections
+* Conditional Statements
+* Loops
+* Functions & Scope
+
+---
+
+# 🧠 Variables & Data Types
+
+Studied how Python stores and manages values using variables.
+
+Learned that variables in Python behave as references pointing to objects in memory instead of fixed storage containers.
+
+Example:
 
 ```python
 name = "Leela"
 age = 19
+cgpa = 8.5
 ```
 
-### Learned:
+Covered the major built-in data types:
 
-* Creating variables
-* Naming conventions
-* Assigning values
-* Updating variable values
-
----
-
-# 🔹 Data Types
-
-Python supports different types of data.
-
-| Data Type | Example    |
-| --------- | ---------- |
-| String    | `"Python"` |
-| Integer   | `10`       |
-| Float     | `8.5`      |
-| Boolean   | `True`     |
-| Complex   | `4 + 5j`   |
-
-### Learned:
-
-* Understanding different data types
-* Using `type()` function
-* Difference between numeric and text values
+| Data Type | Purpose         | Example    |
+| --------- | --------------- | ---------- |
+| `int`     | Whole numbers   | `10`       |
+| `float`   | Decimal numbers | `8.5`      |
+| `str`     | Text values     | `"Python"` |
+| `bool`    | Logical values  | `True`     |
+| `complex` | Complex numbers | `4 + 7j`   |
 
 ---
 
-# 🔹 User Input
+# 🔄 Dynamic Typing Behavior
 
-Using `input()` to get values from users dynamically.
+Understood that Python is dynamically typed.
+
+This means:
+
+* Variable types are decided automatically at runtime
+* Explicit datatype declarations are unnecessary
+* Variables can change type during execution
+
+Example:
 
 ```python
-name = input("Enter your name: ")
+data = 50
+data = "Artificial Intelligence"
 ```
 
-### Learned:
-
-* Taking user input
-* Converting input types
-* Building interactive programs
+This flexibility improves development speed but requires careful value tracking.
 
 ---
 
-# 🔹 Operators
+# 📥 Input Handling & Type Conversion
 
-Operators perform operations on values and variables.
+Explored how Python handles user input using `input()`.
+
+Important observation:
+
+* `input()` always returns data as a string
+
+Example:
+
+```python
+x = input("Enter number: ")
+```
+
+Even if the user enters `10`, Python stores it as:
+
+```python
+"10"
+```
+
+To perform arithmetic operations, explicit type conversion is required.
+
+Example:
+
+```python
+x = int(input("Enter number: "))
+y = float(input("Enter decimal: "))
+```
+
+Learned:
+
+* `int()` → converts to integer
+* `float()` → converts to decimal
+* `str()` → converts to string
+* `bool()` → converts to boolean
+
+---
+
+# ⚙️ Operators in Python
+
+Studied different categories of operators.
 
 ## ➕ Arithmetic Operators
 
@@ -77,6 +123,10 @@ Operators perform operations on values and variables.
 //
 ```
 
+Used for mathematical calculations.
+
+---
+
 ## ⚖️ Comparison Operators
 
 ```python
@@ -88,6 +138,10 @@ Operators perform operations on values and variables.
 <=
 ```
 
+Used to compare values and produce boolean outputs.
+
+---
+
 ## 🔗 Logical Operators
 
 ```python
@@ -96,32 +150,42 @@ or
 not
 ```
 
+Used to combine multiple conditions logically.
+
+---
+
 ## 📝 Assignment Operators
 
 ```python
 +=
 -=
 *=
+/=
 ```
 
-### Learned:
-
-* Mathematical calculations
-* Comparing values
-* Combining conditions
-* Updating variable values efficiently
+Used to update variable values efficiently.
 
 ---
 
-# 🔹 Collections in Python
+# 🗂️ Python Collections
+
+Learned the primary collection data structures used in Python.
+
+---
 
 ## 📋 List
 
-Ordered and changeable collection.
+Ordered and mutable collection.
 
 ```python
 languages = ["Python", "Java", "C"]
 ```
+
+Features:
+
+* Allows duplicates
+* Supports modification
+* Indexed access
 
 ---
 
@@ -133,6 +197,12 @@ Ordered but immutable collection.
 student = ("Leela", 19, "CSE")
 ```
 
+Features:
+
+* Cannot be modified after creation
+* Faster than lists
+* Useful for fixed data
+
 ---
 
 ## 🎯 Set
@@ -143,11 +213,17 @@ Unordered collection with unique values.
 tools = {"ChatGPT", "Claude"}
 ```
 
+Features:
+
+* No duplicates allowed
+* Unordered storage
+* Useful for uniqueness operations
+
 ---
 
-## 🗂️ Dictionary
+## 🗃️ Dictionary
 
-Stores data in key-value pairs.
+Stores key-value pairs.
 
 ```python
 profile = {
@@ -156,71 +232,67 @@ profile = {
 }
 ```
 
-### Learned:
+Features:
 
-* Storing grouped data
-* Accessing elements
-* Updating collections
-* Difference between mutable and immutable structures
+* Fast key-based access
+* Structured data organization
+* Mutable structure
 
 ---
 
-# 🔹 Conditional Statements
+# 🔀 Conditional Statements
 
-Programs can make decisions using conditions.
+Studied decision-making logic using conditions.
 
-## ✅ if
+Covered:
+
+* `if`
+* `if-else`
+* `if-elif-else`
+* Nested conditions
+
+Example:
 
 ```python
-if mark > 90:
-```
-
-## 🔄 if-else
-
-```python
-if age >= 18:
+if mark >= 90:
+    print("Excellent")
+elif mark >= 75:
+    print("Good")
 else:
+    print("Needs Improvement")
 ```
 
-## 🧠 if-elif-else
-
-```python
-if
-elif
-else
-```
-
-## 🪆 Nested if
-
-Condition inside another condition.
-
-### Learned:
-
-* Decision making
-* Checking multiple conditions
-* Building logical flows
+Learned how conditions control program execution flow.
 
 ---
 
-# 🔹 Loops
+# 🔁 Loops & Iteration
 
-Loops repeat code automatically.
+Explored repetitive execution using loops.
 
-## 🔁 for Loop
+---
+
+## 🔄 for Loop
 
 ```python
 for i in range(5):
 ```
 
-## 🔄 while Loop
+Used for fixed iterations.
+
+---
+
+## 🔁 while Loop
 
 ```python
 while condition:
 ```
 
+Used for condition-based repetition.
+
 ---
 
-# 🔹 break Statement
+## ⛔ break Statement
 
 Stops loop execution immediately.
 
@@ -230,9 +302,9 @@ break
 
 ---
 
-# 🔹 continue Statement
+## ⏭️ continue Statement
 
-Skips current iteration.
+Skips the current iteration.
 
 ```python
 continue
@@ -240,24 +312,25 @@ continue
 
 ---
 
-# 🔹 Nested Loops
+## 🪆 Nested Loops
 
 Loop inside another loop.
 
-### Learned:
+Used for:
 
-* Repetitive execution
-* Iteration logic
 * Pattern generation
-* Loop control techniques
+* Matrix-style operations
+* Multi-level iteration
 
 ---
 
-# 🔹 Functions
+# 🛠️ Functions in Python
 
-Functions organize reusable code blocks.
+Studied reusable blocks of code using functions.
 
-## 🛠️ def Function
+---
+
+## 📌 Function Definition
 
 ```python
 def welcome():
@@ -267,8 +340,6 @@ def welcome():
 
 ## 📥 Parameters
 
-Values passed into functions.
-
 ```python
 def add(a, b):
 ```
@@ -276,8 +347,6 @@ def add(a, b):
 ---
 
 ## 📤 Return Statement
-
-Returns output from functions.
 
 ```python
 return result
@@ -287,8 +356,6 @@ return result
 
 ## ⚙️ Default Arguments
 
-Default parameter values.
-
 ```python
 def course(name="Python"):
 ```
@@ -297,56 +364,71 @@ def course(name="Python"):
 
 ## 🌍 Variable Scope
 
-* Global Scope
-* Local Scope
+Covered:
 
-### Learned:
+* Global variables
+* Local variables
 
-* Code reusability
-* Cleaner program structure
-* Modular programming
-* Function-based thinking
+Understood how variables behave inside and outside functions.
 
 ---
 
-# 📈 Skills Improved This Week
+# 🧾 Type Checking
 
-✅ Problem Solving
-✅ Python Syntax Understanding
-✅ Code Structure
-✅ Logical Thinking
-✅ GitHub Consistency
-✅ Debugging Basics
-✅ Confidence in Writing Programs
+Used `type()` to inspect runtime datatypes.
+
+Example:
+
+```python
+print(type(age))
+print(type(name))
+```
+
+This helped verify how Python interprets values dynamically during execution.
 
 ---
 
-# ⚠️ Common Mistakes I Faced
+# ⚠️ Common Mistakes Faced
 
 * Indentation mistakes
 * Missing brackets or colons
+* Forgetting type conversion
 * Confusing strings and integers
 * Variable naming inconsistencies
-* Forgetting type conversion with `input()`
+* Logical errors inside conditions
+* Infinite loops caused by incorrect conditions
 
 ---
 
-# 🎯 Week 01 Outcome
+# 📈 Skills Improved
 
-By the end of Week 01, I can now:
-
-* Write beginner-level Python programs
-* Use variables and data types confidently
-* Build interactive programs using `input()`
-* Apply conditions and loops
-* Create reusable functions
-* Understand Python collections
-* Push structured code to GitHub consistently
+✅ Python syntax understanding
+✅ Logical thinking
+✅ Problem-solving ability
+✅ Runtime behavior understanding
+✅ Interactive program development
+✅ Loop control logic
+✅ Modular programming using functions
+✅ GitHub consistency & documentation discipline
 
 ---
 
-# 🔥 Philosophy
+# 🎯 Week 1 Outcome
+
+By the end of Week 1, I can now:
+
+* Write beginner-level Python programs confidently
+* Handle user input and type conversion correctly
+* Apply operators and logical conditions
+* Use Python collections effectively
+* Build programs using loops and functions
+* Organize code into reusable structures
+* Push structured learning logs consistently to GitHub
+
+---
+
+# 🔥 Learning Philosophy
 
 > Read → Practice → Build → Commit
 
-Small consistent progress every day compounds into engineering mastery.
+Consistent daily execution compounds into long-term engineering mastery.
