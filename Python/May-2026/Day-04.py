@@ -1,3 +1,7 @@
+# ==========================================
+# DAY 04 — CONDITIONAL STATEMENTS
+# ==========================================
+
 print("========== STUDENT ELIGIBILITY SYSTEM ==========")
 
 student_name = input("Enter your name: ")
