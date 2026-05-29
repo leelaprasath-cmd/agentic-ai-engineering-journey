@@ -1,3 +1,7 @@
+# ==========================================
+# DAY 03 — INPUT HANDLING & OPERATORS
+# ==========================================
+
 print("========== STUDENT INFORMATION ==========")
 
 student_name = input("Enter your name: ")
