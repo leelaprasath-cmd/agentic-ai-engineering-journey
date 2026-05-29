@@ -1,3 +1,8 @@
+# ==========================================
+# DAY 01 — VARIABLES & DATA TYPES
+# ==========================================
+
+
 student_name = "Leela Prasath"
 college_name = "Jerusalem College of Engineering"
 department = "Computer Science Engineering"
