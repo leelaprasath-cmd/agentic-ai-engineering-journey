@@ -1,34 +1,29 @@
 # ==========================================
-# DAY 11 — EXCEPTION HANDLING PRACTICE
+# DAY 11 — STRING METHODS PRACTICE
 # ==========================================
 
-print("===== SIMPLE CALCULATOR =====")
+print("===== STRING METHODS PRACTICE =====")
 
-try:
+sentence = input("Enter a sentence: ")
 
-    num1 = int(input("Enter first number: "))
-    num2 = int(input("Enter second number: "))
+print("\nOriginal :", sentence)
 
-    print("\n===== RESULTS =====")
+print("Upper Case :", sentence.upper())
 
-    print("Addition       :", num1 + num2)
-    print("Subtraction    :", num1 - num2)
-    print("Multiplication :", num1 * num2)
-    print("Division       :", num1 / num2)
+print("Lower Case :", sentence.lower())
 
-except ValueError:
+print("Title Case :", sentence.title())
 
-    print("Error: Please enter valid numbers.")
+print("Word Count :", len(sentence.split()))
 
-except ZeroDivisionError:
+search_word = input("\nEnter a word to search: ")
 
-    print("Error: Division by zero is not allowed.")
+if search_word.lower() in sentence.lower():
 
-except Exception as error:
+    print("Word Found")
 
-    print("Unexpected Error:", error)
+else:
 
-finally:
+    print("Word Not Found")
 
-    print("\nProgram Finished.")
-
+print("\n===== PROGRAM COMPLETED =====")
