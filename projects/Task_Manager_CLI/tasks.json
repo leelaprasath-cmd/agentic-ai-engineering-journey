@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Write a Python showcase",
+    "description": "Demonstrate OOP and decorators",
+    "priority": "High",
+    "status": "Completed",
+    "created_date": "2026-07-01 20:49:46"
+  },
+  {
+    "title": "git hub management",
+    "description": "nedd to push a new thing",
+    "priority": "Medium",
+    "status": "Pending",
+    "created_date": "2026-07-01 20:54:22"
+  }
+]
